@@ -1,0 +1,67 @@
+$purple : #846ADD;
+$grey : #666666;
+input.mb-2 {
+  height: 50px;
+}
+input.mb-2, textarea {
+  display: block;
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  color: $grey;
+  font-family: Montserrat-Bold !important;
+  border-radius: 25px;
+  padding-left: 55px;
+  padding-right: 30px;
+  border: none;
+  font-size: 0.9em !important;
+}
+button {
+  display: block;
+  width: 100%;
+}
+.user {
+  float: left;
+  margin-left: 32px;
+  margin-top: -41px;
+  color: $grey;
+}
+.envelope {
+  float: left;
+  margin-left: 32px;
+  margin-top: -40px;
+  color: $grey;
+}
+.phone {
+  float: left;
+  margin-left: 32px;
+  margin-top: -40px;
+  color: $grey;
+}
+.txt {
+  padding-left: 30px;
+  padding-top: 13px;
+}
+.send {
+  display: block;
+  width: 100%;
+  height: 45px;
+  background-color: $purple;
+  color: white;
+  font-family: Montserrat-Bold;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 1s;
+}
+.send:hover {
+  background: #212121;
+}
+input[type="text"], textarea {
+  outline: none;
+}
+*:focus {
+  outline: 0 !important;
+}
+span.fa {
+  font-size: 0.9em;
+}

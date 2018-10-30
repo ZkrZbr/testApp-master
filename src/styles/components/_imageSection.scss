@@ -1,0 +1,13 @@
+img.envelope {
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  transition: all .5s;
+}
+.d_img {
+  padding-top: 90px;
+  overflow: hidden;
+}
+div.d_img:hover img {
+  transform: scale(1.1);
+}
