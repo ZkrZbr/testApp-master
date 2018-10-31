@@ -18,7 +18,8 @@ const port = process.env.PORT || 3000;
 // mongoose config
 mongoose.set('debug', true);
 mongoose.Promise = Promise;
-mongoose.connect('mongodb://localhost/contacts_db');
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/contacts_db';
+mongoose.connect(MONGODB_URI);
 var contactSchema = new mongoose.Schema({
     name: {type: String, required: true},
     email: {type: String, required: true},
