@@ -32,7 +32,7 @@ export default class AddContact extends React.Component{
             this.setState(() => ({ contact, errors }));
             //console.log(contact);
             //console.log(errors);
-            const uri = "http://localhost:3000/api/contacts";
+            const uri = "https://contact-webmaster-app.herokuapp.com/api/contacts";
             $.post(uri, contact).then(function (data) {
                 // console.log(data);
             });
