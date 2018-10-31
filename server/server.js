@@ -13,6 +13,7 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
+const port = process.env.PORT || 3000;
 
 // mongoose config
 mongoose.set('debug', true);
@@ -39,6 +40,6 @@ app.post('/api/contacts', function(req, res){
 });
 
 // server
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log("Server is started");
 });
