@@ -10,7 +10,7 @@
     "dev-server": "webpack-dev-server",
     "test": "jest",
     "start": "node server/server.js",
-    "heroku-postbuild": "cd client && npm run build:prod"
+    "heroku-postbuild": "npm run build:prod"
   },
   "proxy": "http://localhost:3000",
   "author": "Zoubeir Zakaria",
