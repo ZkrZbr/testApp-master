@@ -12,7 +12,7 @@
     "start": "node server/server.js",
     "heroku-postbuild": "npm run build:prod"
   },
-  "proxy": "http://localhost:8000",
+  "proxy": "http://localhost:3000",
   "author": "Zoubeir Zakaria",
   "license": "MIT",
   "dependencies": {
